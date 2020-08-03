@@ -1,0 +1,11 @@
+pages:
+
+user/activation
+user/login
+user/daftar
+user/logout
+user/pforil
+service/home
+service/list
+
+ajax:
