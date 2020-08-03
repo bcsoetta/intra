@@ -46,9 +46,6 @@ if (!$result) {
         session_start();
     }
     if ($result['group'] === 'beacukai') {
-        if (in_array('', $result)) {
-            $result['apps_data'] = null;
-        }
         $_SESSION['sdata'] = $result;
         $_SESSION['sstat'] = true;
         echo json_encode($result);
