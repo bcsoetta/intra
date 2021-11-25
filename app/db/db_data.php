@@ -107,4 +107,11 @@ if (isset($_POST['action'])) {
 
 		echo json_encode($data);
 	}
+
+	if ($_POST['action'] == 'geturl') {
+		$appId = $_POST['appid'];
+		$urlData = mysqli_query($con, "SELECT url FROM aplikasi WHERE app_id = '$appId'");
+		$url = mysqli_fetch_assoc($urlData);
+		echo json_encode($url['url']);
+	}
 }

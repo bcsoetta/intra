@@ -1,7 +1,7 @@
 RewriteEngine on
-RewriteRule ^([a-zA-z0-9-]+)/([a-zA-z0-9-]+)/([0-9]+)/$ index.php?url=$1&page=$2 [NC,L]
-RewriteRule ^([a-zA-z0-9-]+)/([a-zA-z0-9-]+)/([a-zA-z0-9-/]+)/([0-9]+)/$ index.php?url=$1&page=$2 [NC,L]
-RewriteRule ^([a-zA-z0-9-]+)/([a-zA-z0-9-]+)/$ index.php?url=$1&page=$2 [NC,L]
-RewriteRule ^([-\w]+)/(\d+)$ index.php?url=$1 [NC,L]
+# RewriteRule ^([a-zA-z0-9-]+)/([a-zA-z0-9-]+)/([0-9]+)/$ index.php?url=$1&page=$2 [NC,L]
+# RewriteRule ^([a-zA-z0-9-]+)/([a-zA-z0-9-]+)/([a-zA-z0-9-/]+)/([0-9]+)/$ index.php?url=$1&page=$2 [NC,L]
+# RewriteRule ^([a-zA-z0-9-]+)/([a-zA-z0-9-]+)/$ index.php?url=$1&page=$2 [NC,L]
+# RewriteRule ^([-\w]+)/(\d+)$ index.php?url=$1 [NC,L]
 RewriteRule ^([A-Za-z0-9-]+)\/?$ index.php?dt=$1 [NC]
-RewriteRule ^([a-zA-Z0-9-]+)\/([a-zA-Z0-9-]+)\/?$ index.php?app=$1&dt=$2 [NC]
+# RewriteRule ^([a-zA-Z0-9-]+)\/([a-zA-Z0-9-]+)\/?$ index.php?app=$1&dt=$2 [NC]

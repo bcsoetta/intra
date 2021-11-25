@@ -6,6 +6,7 @@
 	<div class="form-titlex">Login</div>
 	<div class="smart-forms smart-container wrap-3">
         <form id="form-login" action="<?php echo baseurl; ?>app/db/ssod.php">
+			<input type="hidden" name="appid" value="<?php echo $appid ?>">
         	<div class="form-body theme-yellow">
                 <div class="section">
                     <label for="username" class="field-label">Username</label>

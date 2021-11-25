@@ -8,12 +8,23 @@
 		include "app/templates/header.php";
 	}
 
+	$url = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+
 	if (isset($_GET['dt'])) {
 		switch ($_GET['dt']) {
 			case 'activation':
 				break;
 			case 'login':
 				// sessiony();
+
+				$query = parse_url($url, PHP_URL_QUERY);
+				parse_str($query, $arr_query);
+				if (array_key_exists('appid', $arr_query)) {
+					$appid =  $arr_query['appid'];
+				} else {
+					$appid =  null;
+				}
+				
 				break;
 			case 'daftar':
 				// sessiony();
